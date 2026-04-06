@@ -1,0 +1,69 @@
+====== Cor do texto ======
+
+Preto:      \033[30m
+Vermelho:   \033[31m
+Verde:      \033[32m
+Amarelo:    \033[33m
+Azul:       \033[34m
+Magenta:    \033[35m
+Ciano:      \033[36m
+Branco:     \033[37m
+
+
+====== Background ======
+
+Preto:      \033[40m
+Vermelho:   \033[41m
+Verde:      \033[42m
+Amarelo:    \033[43m
+Azul:       \033[44m
+Magenta:    \033[45m
+Ciano:      \033[46m
+Branco:     \033[47m
+
+
+====== Estilos de texto ======
+
+Reset:      \033[0m
+Negrito:    \033[1m
+Fraco:      \033[2m 
+Itálico:    \033[3m
+Sublinhado: \033[4m
+Piscando Slow:   \033[5m
+Piscando Rapid:   \033[6m
+Invertido:  \033[7m
+Oculto:     \033[8m
+Tachado:    \033[9m
+
+
+====== Controle do cursor ======
+
+Mover cursor:       \033[<l>;<c>H
+Subir N linhas:     \033[<n>A
+Descer N linhas:    \033[<n>B
+Direita N colunas:  \033[<n>C
+Esquerda N colunas: \033[<n>D
+
+====== Salvar/restaurar cursor ======
+Salvar posição:     \033[s
+Restaurar posição:  \033[u
+
+====== Limpeza de tela ======
+
+Limpar tela inteira:    \033[2J
+Limpar linha:           \033[K
+Limpar até início:      \033[1K
+Limpar até fim:         \033[0K
+
+
+
+====== Cores estendidas(256 cores) ======
+
+Texto:  \033[38;5;<n>m
+Fundo:  \033[48;5;<n>m
+
+
+====== RGB colors ======
+
+Texto:  \033[38;2;R;G;Bm
+Fundo:  \033[48;2;R;G;Bm
