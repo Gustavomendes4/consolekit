@@ -12,7 +12,7 @@ typedef struct{
     short int valid;
 }Bookmark;
 
-Bookmark book[BOOKMARK_LIST_LEN];
+extern Bookmark book[BOOKMARK_LIST_LEN];
 
 void initBookMark();
 

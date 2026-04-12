@@ -18,11 +18,16 @@
 #include "./consolekit.h"
 
 #ifdef _WIN32
+    #include "./core/win/win.c"
 
-#include "./core/winConsoleKit.c"
+    #include "./core/win/wIokit.c"
+    #include "./core/win/wCursorkit.c"
 
 #else
+    #include "./core/unix/unix.c"
 
-#include "./core/unixConsoleKit.c"
-
+    #include "./core/unix/uCursorkit.c"
+    #include "./core/unix/uColorkit.c"
+    #include "./core/unix/uIokit.c"
+    
 #endif

@@ -5,7 +5,7 @@
 #include "../consolekit.h"
 #include "../bookmark.h"
 
-extern Bookmark book[BOOKMARK_LIST_LEN];
+Bookmark book[BOOKMARK_LIST_LEN];
 
 // ========     INTERNAL FUNCTIONS  ==========
 

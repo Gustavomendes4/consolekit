@@ -1,8 +1,6 @@
 
 /*
 
-    Ideias:
-        - Criar uma lista de 'posicoes conhecidas', push e pop vinculado à uma string.
 
 
 
@@ -14,6 +12,11 @@
 
 #ifndef CONSOLEKIT_H_INCLUDED
 #define CONSOLEKIT_H_INCLUDED
+
+#if defined(_WIN32) && !defined(MY_HANDLE)
+    #define MY_HANDLE initHandle()
+#endif
+
 
 typedef enum TermColor{
 
@@ -116,5 +119,14 @@ void home();
 int getCursorX();
 
 int getCursorY();
+
+
+// IOkit functions
+char getch(void);
+
+char getche(void);
+
+int kbhit(void);
+
 
 #endif
